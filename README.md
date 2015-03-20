@@ -6,10 +6,10 @@ This is a PHP Frontend I made to work with the SQLMAP JSON API Server (sqlmapapi
 Here is a few quick videos I made to show that almost all of your usual SQLMAP command line functionality is still possible via this Web GUI. 
 
 Demo against: Windows 2003 Server, IIS/6.0 + ASP + MS-SQL 2005
-   YOUTUBE LINK: http://youtu.be/8MRew20Q1xE
+ - YOUTUBE: http://youtu.be/8MRew20Q1xE
 
 Demo against: Linux (CentOS), Apache, MySQL, PHP
-   YOUTUBE LINK: http://youtu.be/cs2Gvss0v-k
+ - YOUTUBE: http://youtu.be/cs2Gvss0v-k
 
 Blog Write-Up: http://kaoticcreations.blogspot.com/
 
