@@ -1,0 +1,90 @@
+/* track our active tab and set background color */
+.nav-tabs > li > a:active,
+.nav-tabs > li > a:focus {
+  color: #FFFFFF;
+  background-color: #006DCC;
+}
+.nav-tabs > li > a:hover {
+  color: #FFFFFF;
+  background-color: #B2D3EF;
+}
+
+/* Hide ALL of the tabs containers by default */
+div[class$="_container"] {
+  display: none;
+}
+
+/* 
+   Make sure the basic tab container is visible by default
+   js will handle flipping display settings for tab divs after page load
+*/
+div[class="settings_basics_container"]{
+  display: block;
+}
+
+/* Define base styling for error message type text situations */
+.epic_fail {
+  color: RED;
+  font-weight: bold;
+}
+
+
+/* The Submission button to initiate scan */
+.btn {
+  width:100%;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #006DCC;
+}
+.btn:hover {
+  width:100%;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #00417A;
+}
+
+
+
+/* Text for Spinner while awaiting scan results */
+.scan_info {
+  color: #006DCC;
+  font-weight: bold;
+  font-size: 24px
+}
+
+/* Spinner Styling */
+.loading {
+  position: relative;
+  width: 0;
+  padding: 20px;
+  background:
+   linear-gradient(rgba(0,102,205,1) 30%, transparent 30%, transparent 70%, rgba(0,102,205,.4) 70%),
+   linear-gradient(to left, rgba(0,102,205,.2) 30%, transparent 30%, transparent 70%, rgba(0,102,205,.8) 70%);
+  background-repeat: no-repeat;
+  background-size: 10% 100%, 100% 10%;
+  background-position: 50% 0%, 0 50%;
+  -webkit-animation: loading .7s infinite steps(8);
+  animation: loading .7s infinite steps(8);
+}
+.loading:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+   linear-gradient(rgba(0,102,205,.1) 30%, transparent 30%, transparent 70%, rgba(0,102,205,.5) 70%),
+   linear-gradient(to left, rgba(0,102,205,.3) 30%, transparent 30%, transparent 70%, rgba(0,102,205,.9) 70%);
+  background-repeat: no-repeat;
+  background-size: 10% 100%, 100% 10%;
+  background-position: 50% 0%, 0 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@-webkit-keyframes loading {
+  100% {-webkit-transform: rotate(1turn);}
+}
+@keyframes loading {
+  100% {transform: rotate(1turn);}
+}
